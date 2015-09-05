@@ -1,0 +1,27 @@
+{
+	"connections":	{
+		"arduino":	{
+			"arduinodevicename":"/dev/tty.usbmodem1451",
+			"baud":57600
+		},
+		"rfid":	{
+			"rfiddevicename":"/dev/tty.usbserial-A6026RAX",
+			"baud":9600
+		},
+		"osc": {
+			"hostname": "127.0.0.1",
+			"port": 53000
+		}
+	},
+	"appsettings": {
+		"delaytimer":1500,
+		"threshold":500
+	},
+	"rfid":	{
+		"tag1":"760062F78D6E",
+		"tag2":"7600631D2F27",
+		"tag3":"760061F4BF5F",
+		"tag4":"760063467D2E",
+		"tag5":"760063471E4C"
+	}
+}
