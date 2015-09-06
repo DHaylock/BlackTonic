@@ -49,3 +49,6 @@ Likewise if the RFID Reader isn't responding copy the address into the config fi
 
 #### UI
 ![alt text](UI.png "UI")
+
+### Schematic
+![schematic](BlackTonicWiring_schem.png,"Schematic")
