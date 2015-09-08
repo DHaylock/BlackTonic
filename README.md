@@ -48,7 +48,7 @@ If the Arduino does not respond:
 Likewise if the RFID Reader isn't responding copy the address into the config file
 
 #### UI
-![alt text](UI.png "UI")
+![UI](UI.png "UI")
 
 ### Schematic
-![alt text](BlackTonicWiring_schem.png,"BlackTonicWiring_schem")
+![Schematic](BlackTonicWiring_schem.png,"Schem")
