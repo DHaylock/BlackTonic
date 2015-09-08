@@ -51,4 +51,4 @@ Likewise if the RFID Reader isn't responding copy the address into the config fi
 ![UI](UI.png "UI")
 
 ### Schematic
-![Schematic](BlackTonicWiring_schem.png,"Schem")
+![Schematic](BlackTonicWiring_schem.png "Schem")
