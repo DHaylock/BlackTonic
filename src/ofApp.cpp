@@ -149,122 +149,122 @@ void ofApp::exit()
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key)
 {
-    switch (key) {
-        case 'a':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "A" << endl;
-            fireSignal(1);
-            triggerLatch[0] = true;
-            break;
-        case '2':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "2" << endl;
-            fireSignal(2);
-            triggerLatch[1] = true;
-            break;
-        case '3':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "3" << endl;
-            fireSignal(3);
-            triggerLatch[2] = true;
-            break;
-        case '4':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "4" << endl;
-            fireSignal(4);
-            triggerLatch[3] = true;
-            break;
-        case '5':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "5" << endl;
-            fireSignal(5);
-            triggerLatch[4] = true;
-            break;
-        case '6':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "6" << endl;
-            fireSignal(6);
-            triggerLatch[5] = true;
-            break;
-        case '7':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "7" << endl;
-            fireSignal(7);
-            triggerLatch[6] = true;
-            break;
-        case '8':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "8" << endl;
-            fireSignal(8);
-            triggerLatch[7] = true;
-            break;
-        case '9':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "9" << endl;
-            fireSignal(9);
-            triggerLatch[8] = true;
-            break;
-        case '0':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "J" << endl;
-            fireSignal(10);
-            triggerLatch[9] = true;
-            break;
-        case 'j':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "Q" << endl;
-            fireSignal(11);
-            triggerLatch[10] = true;
-            break;
-        case 'q':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "Q" << endl;
-            fireSignal(12);
-            triggerLatch[11] = true;
-            break;
-        case '[':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "RFID 1" << endl;
-            fireSignal(0);
-            rfidLatches[0] = true;
-            break;
-        case ']':
-            cout << "Firing Dead Cue" << endl;
-            fireSignal(13);
-            ofSleepMillis(400);
-            cout << "Firing Cue" << "A" << endl;
-            fireSignal(15);
-            rfidLatches[1] = true;
-            break;
-        default:
-            break;
-    }
+//    switch (key) {
+//        case 'a':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "A" << endl;
+//            fireSignal(1);
+//            triggerLatch[0] = true;
+//            break;
+//        case '2':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "2" << endl;
+//            fireSignal(2);
+//            triggerLatch[1] = true;
+//            break;
+//        case '3':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "3" << endl;
+//            fireSignal(3);
+//            triggerLatch[2] = true;
+//            break;
+//        case '4':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "4" << endl;
+//            fireSignal(4);
+//            triggerLatch[3] = true;
+//            break;
+//        case '5':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "5" << endl;
+//            fireSignal(5);
+//            triggerLatch[4] = true;
+//            break;
+//        case '6':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "6" << endl;
+//            fireSignal(6);
+//            triggerLatch[5] = true;
+//            break;
+//        case '7':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "7" << endl;
+//            fireSignal(7);
+//            triggerLatch[6] = true;
+//            break;
+//        case '8':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "8" << endl;
+//            fireSignal(8);
+//            triggerLatch[7] = true;
+//            break;
+//        case '9':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "9" << endl;
+//            fireSignal(9);
+//            triggerLatch[8] = true;
+//            break;
+//        case '0':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "J" << endl;
+//            fireSignal(10);
+//            triggerLatch[9] = true;
+//            break;
+//        case 'j':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "Q" << endl;
+//            fireSignal(11);
+//            triggerLatch[10] = true;
+//            break;
+//        case 'q':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "Q" << endl;
+//            fireSignal(12);
+//            triggerLatch[11] = true;
+//            break;
+//        case '[':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "RFID 1" << endl;
+//            fireSignal(0);
+//            rfidLatches[0] = true;
+//            break;
+//        case ']':
+//            cout << "Firing Dead Cue" << endl;
+//            fireSignal(13);
+//            ofSleepMillis(400);
+//            cout << "Firing Cue" << "A" << endl;
+//            fireSignal(15);
+//            rfidLatches[1] = true;
+//            break;
+//        default:
+//            break;
+//    }
 }
 #pragma mark - Arduino
 //--------------------------------------------------------------
