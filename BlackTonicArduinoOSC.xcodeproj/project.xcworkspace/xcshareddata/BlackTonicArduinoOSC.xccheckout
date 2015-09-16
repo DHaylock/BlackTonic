@@ -22,7 +22,7 @@
 		<key>01EB2194E7E1A7C0284C0694C718032EF2550081</key>
 		<string>../..</string>
 		<key>5DB7C332A3A89035E93556A2A38BF414005BA671</key>
-		<string>../../../../../addons/ofxJSON</string>
+		<string>../../../addons/ofxJSON</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/DHaylock/BlackTonic.git</string>
