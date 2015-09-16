@@ -368,114 +368,114 @@ void ofApp::drawLDRPositions()
     ofNoFill();
     ofSetColor(255, 255);
     ofCircle(_x, _y, 250);
-    for (int i = 0; i < pos.size(); i++) {
-        
-        ofPushMatrix();
-        ofTranslate(_x,_y);
-        ofRotateZ(-60);
-        ofPushMatrix();
-        ofTranslate(-_x, -_y);
-
-        ofSetColor(255,255);
-        clockLabels.drawString(cardLabel[i], pos[i].x,pos[i].y);
-        ofPushMatrix();
-        ofTranslate(labelPos[i]);
-        ofRotateZ(60);
-        ofPushMatrix();
-        ofTranslate(-labelPos[i]);
-        if (i >= 5) {
-            ofSetColor(51, 153, 51);
-            clockLabels.drawString(ofToString(i+1), labelPos[i].x-10,labelPos[i].y);
-        }
-        else {
-            ofSetColor(51, 153, 51);
-            clockLabels.drawString(ofToString(i+1), labelPos[i].x,labelPos[i].y);
-        }
-        ofPopMatrix();
-        
-        ofPushMatrix();
-        ofTranslate(ldrReadingLabelPos[i]);
-        ofRotateZ(60);
-        ofPushMatrix();
-        ofTranslate(-ldrReadingLabelPos[i]);
-        if (i == 11) {
-            if (!triggerLatch[i]) {
-                ofSetColor(ofColor::red);
-                clockLabels.drawString("Not Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
-            }
-            else {
-                ofSetColor(51, 153, 51);
-                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
-            }
-        }
-        else if (i == 5) {
-            if (!triggerLatch[i]) {
-                ofSetColor(ofColor::red);
-                clockLabels.drawString("Not Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
-            }
-            else {
-                ofSetColor(51, 153, 51);
-                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
-            }
-        }
-        else if (i > 5 && i < 11) {
-            if (!triggerLatch[i]) {
-                ofSetColor(ofColor::red);
-                clockLabels.drawString("Not Triggered ", ldrReadingLabelPos[i].x-120,ldrReadingLabelPos[i].y);
-            }
-            else {
-                ofSetColor(51, 153, 51);
-                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x-120,ldrReadingLabelPos[i].y);
-            }
-        }
-        else {
-            if (!triggerLatch[i]) {
-                ofSetColor(ofColor::red);
-                clockLabels.drawString("Not Triggered ",ldrReadingLabelPos[i].x,ldrReadingLabelPos[i].y);
-            }
-            else {
-                ofSetColor(51, 153, 51);
-                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x,ldrReadingLabelPos[i].y);//+ ofToString(ard.getAnalog(i))
-            }
-        }
-        ofPopMatrix();
-        ofPopMatrix();
-        ofPopMatrix();
-    }
-   
-    ofPushMatrix();
-    for (int i = 0; i < pos.size(); i++) {
-        ofPushMatrix();
-        ofTranslate(pos[i]);
-        ofRotateZ(angles[i]);
-        ofPushMatrix();
-        ofTranslate(-pos[i]);
-        ofPushStyle();
-        ofNoFill();
-        ofSetColor(255);
-        ofRect(pos[i].x-35,pos[i].y-25, 70,50);
-        ofPopStyle();
-        ofPopMatrix();
-        ofPopMatrix();
-    }
-    ofPopMatrix();
-    
-    ofPushMatrix();
-    ofTranslate(_x,_y);
-    ofRotateZ(-60);
-    ofPushMatrix();
-    ofTranslate(-_x,-_y);
-    for (int i = 0; i < pos.size(); i++) {
-        if (triggerLatch[i]) {
-            ofPushStyle();
-            ofFill();
-            ofSetColor(255, 0, 0);
-            ofRect(pos[i].x-10,pos[i].y-5, 10,10);
-            ofPopStyle();
-        }
-    }
-    ofPopMatrix();
-    ofPopMatrix();
+//    for (int i = 0; i < pos.size(); i++) {
+//        
+//        ofPushMatrix();
+//        ofTranslate(_x,_y);
+//        ofRotateZ(-60);
+//        ofPushMatrix();
+//        ofTranslate(-_x, -_y);
+//
+//        ofSetColor(255,255);
+//        clockLabels.drawString(cardLabel[i], pos[i].x,pos[i].y);
+//        ofPushMatrix();
+//        ofTranslate(labelPos[i]);
+//        ofRotateZ(60);
+//        ofPushMatrix();
+//        ofTranslate(-labelPos[i]);
+//        if (i >= 5) {
+//            ofSetColor(51, 153, 51);
+//            clockLabels.drawString(ofToString(i+1), labelPos[i].x-10,labelPos[i].y);
+//        }
+//        else {
+//            ofSetColor(51, 153, 51);
+//            clockLabels.drawString(ofToString(i+1), labelPos[i].x,labelPos[i].y);
+//        }
+//        ofPopMatrix();
+//        
+//        ofPushMatrix();
+//        ofTranslate(ldrReadingLabelPos[i]);
+//        ofRotateZ(60);
+//        ofPushMatrix();
+//        ofTranslate(-ldrReadingLabelPos[i]);
+//        if (i == 11) {
+//            if (!triggerLatch[i]) {
+//                ofSetColor(ofColor::red);
+//                clockLabels.drawString("Not Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
+//            }
+//            else {
+//                ofSetColor(51, 153, 51);
+//                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
+//            }
+//        }
+//        else if (i == 5) {
+//            if (!triggerLatch[i]) {
+//                ofSetColor(ofColor::red);
+//                clockLabels.drawString("Not Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
+//            }
+//            else {
+//                ofSetColor(51, 153, 51);
+//                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x-50,ldrReadingLabelPos[i].y);
+//            }
+//        }
+//        else if (i > 5 && i < 11) {
+//            if (!triggerLatch[i]) {
+//                ofSetColor(ofColor::red);
+//                clockLabels.drawString("Not Triggered ", ldrReadingLabelPos[i].x-120,ldrReadingLabelPos[i].y);
+//            }
+//            else {
+//                ofSetColor(51, 153, 51);
+//                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x-120,ldrReadingLabelPos[i].y);
+//            }
+//        }
+//        else {
+//            if (!triggerLatch[i]) {
+//                ofSetColor(ofColor::red);
+//                clockLabels.drawString("Not Triggered ",ldrReadingLabelPos[i].x,ldrReadingLabelPos[i].y);
+//            }
+//            else {
+//                ofSetColor(51, 153, 51);
+//                clockLabels.drawString("Triggered ", ldrReadingLabelPos[i].x,ldrReadingLabelPos[i].y);//+ ofToString(ard.getAnalog(i))
+//            }
+//        }
+//        ofPopMatrix();
+//        ofPopMatrix();
+//        ofPopMatrix();
+//    }
+//   
+//    ofPushMatrix();
+//    for (int i = 0; i < pos.size(); i++) {
+//        ofPushMatrix();
+//        ofTranslate(pos[i]);
+//        ofRotateZ(angles[i]);
+//        ofPushMatrix();
+//        ofTranslate(-pos[i]);
+//        ofPushStyle();
+//        ofNoFill();
+//        ofSetColor(255);
+//        ofRect(pos[i].x-35,pos[i].y-25, 70,50);
+//        ofPopStyle();
+//        ofPopMatrix();
+//        ofPopMatrix();
+//    }
+//    ofPopMatrix();
+//    
+//    ofPushMatrix();
+//    ofTranslate(_x,_y);
+//    ofRotateZ(-60);
+//    ofPushMatrix();
+//    ofTranslate(-_x,-_y);
+//    for (int i = 0; i < pos.size(); i++) {
+//        if (triggerLatch[i]) {
+//            ofPushStyle();
+//            ofFill();
+//            ofSetColor(255, 0, 0);
+//            ofRect(pos[i].x-10,pos[i].y-5, 10,10);
+//            ofPopStyle();
+//        }
+//    }
+//    ofPopMatrix();
+//    ofPopMatrix();
     stringstream ss;
     for (int i = 0; i < NUM_TRIGGERS; i++) {
         ofSetColor(51, 153, 51);
