@@ -118,7 +118,7 @@ void ofApp::draw()
         title.drawString("arduino not ready...\n", 515, 40);
     }
     drawTimers();
-    drawLDRPositions();
+//    drawLDRPositions();
     cardReader.draw(ofGetWidth()-200, 0);
     if (!rfidLatches[0]) {
         ofSetColor(ofColor::red);
