@@ -24,6 +24,24 @@ The code has the following dependancies:
 * [ofxSimpleTimer](https://github.com/DHaylock/ofxSimpleTimer) (Forked and Altered)
 * [ofxJSON](https://github.com/jefftimesten/ofxJSON)
 
+#### Overide Keys
+| Key  | Trigger  |
+|---|---|
+| `a` | Card Ace  |
+| `2` | Card 2  |
+| `3` | Card 3  |
+| `4` | Card 4  |
+| `5` | Card 5  |
+| `6` | Card 6  |
+| `7` | Card 7  |
+| `8` | Card 8  |
+| `9` | Card 9  |
+| `0` | Card 10  |
+| `j` | Card Jack |
+| `q` | Card Queen  |
+| `[` | RFID 1  |
+| `]` | RFID 2  |
+
 #### How to alter
 There is a json file in the data folder of the application.
 The following Variables are alterable:
