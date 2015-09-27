@@ -527,6 +527,7 @@ void ofApp::resetLatches()
     }
     rfidLatches[0] = false;
     rfidLatches[1] = false;
+    triggerLatch[3] = true;
 }
 #pragma mark - Timers
 //--------------------------------------------------------------

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "01EB2194E7E1A7C0284C0694C718032EF2550081",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "01EB2194E7E1A7C0284C0694C718032EF2550081" : 0,
+    "5DB7C332A3A89035E93556A2A38BF414005BA671" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8CCB1076-C81B-4FB9-9CEC-298ACF67DD84",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "01EB2194E7E1A7C0284C0694C718032EF2550081" : "BlackTonicArduinoOSC",
+    "5DB7C332A3A89035E93556A2A38BF414005BA671" : "addons\/ofxJSON"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BlackTonicArduinoOSC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BlackTonicArduinoOSC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DHaylock\/BlackTonic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01EB2194E7E1A7C0284C0694C718032EF2550081"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jefftimesten\/ofxJSON.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5DB7C332A3A89035E93556A2A38BF414005BA671"
+    }
+  ]
+}
